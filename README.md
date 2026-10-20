@@ -25,14 +25,17 @@ like a mailbox, plus standard export files that any mail, calendar and contacts 
 
 ## What can it do?
 
-| | |
-|---|---|
-| 🔍 **Look inside** | Open an OST/PST file as a web page: folder tree, mail list, reading pane with attachments, a **calendar** (month and list view), **contacts** and **tasks**. Read-only – nothing is ever changed. |
-| 📤 **Take it with you** | Export **mail** to mbox (keeping the folder structure as labels, like Google Takeout), the **calendar** and **tasks** to iCalendar (`.ics`) and **contacts** to vCard (`.vcf`). |
-| 🔒 **Stays on your computer** | Everything runs locally. No upload, no account, no tracking. The viewer blocks scripts in mails and only loads external images when you ask for it. |
-| 📦 **Handles big files** | Tested with a 1 GB mailbox with 14,000+ items; memory use stays low. |
-| 🗓️ **Finds the gaps** | Shows how many mails exist per month – handy to spot that Outlook only kept the last 12 months offline. |
-| 🌍 **Speaks your language** | Viewer in English and German, more languages can be added easily ([how](locales/README.md)). |
+- 🔍 **Look inside** – Open an OST/PST file as a web page: folder tree, mail list, reading pane with attachments, a
+  **calendar** (month and list view), **contacts** and **tasks**. Read-only – nothing is ever changed.
+- 📤 **Take it with you** – Export **mail** to mbox (keeping the folder structure as labels, like Google Takeout), the
+  **calendar** and **tasks** to iCalendar (`.ics`) and **contacts** to vCard (`.vcf`).
+- 🔒 **Stays on your computer** – Everything runs locally. No upload, no account, no tracking. The viewer blocks
+  scripts in mails and only loads external images when you ask for it.
+- 📦 **Handles big files** – Tested with a 1 GB mailbox with 14,000+ items; memory use stays low.
+- 🗓️ **Finds the gaps** – Shows how many mails exist per month – handy to spot that Outlook only kept the last
+  12 months offline.
+- 🌍 **Speaks your language** – Viewer in English and German, more languages can be added easily
+  ([how](locales/README.md)).
 
 ### Typical situations
 
