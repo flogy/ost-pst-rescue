@@ -1,0 +1,57 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 578 >>
+stream
+BT /F2 15 Tf 56 790 Td \(Invoice INV-202310-1220\) Tj ET
+BT /F1 10 Tf 56 760 Td 14 TL
+\(Proseware GmbH\) Tj T*
+\(Lizenzgasse 2, 80331 M¸nchen, Germany\) Tj T*
+\(\) Tj T*
+\(Invoice date: 23 October 2023\) Tj T*
+\(Customer: Contoso Ltd., 10 Example Street, 8000 Zurich, Switzerland\) Tj T*
+\(\) Tj T*
+\(Services October 2023\) Tj T*
+\(Amount excl. VAT: CHF 4,744.14\) Tj T*
+\(VAT 8.1 %: CHF 384.28\) Tj T*
+\(Total: CHF 5,128.42\) Tj T*
+\(\) Tj T*
+\(Payable within 30 days.\) Tj T*
+\(IBAN: CH00 0000 0000 0000 0000 0 \(sample account\)\) Tj T*
+ET
+BT /F1 8 Tf 520 30 Td (1/1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Title \(Invoice INV-202310-1220\) /Producer (sample-content.js) >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000000320 00000 n 
+0000000948 00000 n 
+0000001084 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R /Info 7 0 R >>
+startxref
+1170
+%%EOF

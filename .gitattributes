@@ -1,0 +1,13 @@
+# Text files with LF line endings on every platform
+* text=auto eol=lf
+
+# Binary files: never convert line endings
+*.pdf binary
+*.png binary
+*.gif binary
+*.jpg binary
+*.docx binary
+*.ost binary
+*.pst binary
+# attachments of the demo viewer are stored byte for byte
+docs/demo/data/a/** binary

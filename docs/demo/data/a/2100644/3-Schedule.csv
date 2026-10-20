@@ -1,0 +1,6 @@
+﻿Phase;Start;End;Owner
+Concept;2026-08-24;2026-09-25;Contoso
+Design;2026-09-28;2026-10-23;Contoso
+Build;2026-10-26;2026-12-04;Contoso
+Test;2026-12-07;2026-12-18;Fabrikam
+Go-live;2027-01-11;2027-01-11;both

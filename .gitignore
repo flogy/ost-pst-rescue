@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Mailbox files and everything converted from them: never commit personal data.
+# Only the anonymous sample export in docs/demo/ is part of the repository.
+*.ost
+*.pst
+*.nst
+*.mbox
+*.eml
+*.ics
+*.vcf
+*_html/
+*_mbox/
+!docs/demo/**
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

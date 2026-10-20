@@ -1,0 +1,5 @@
+﻿Record;Field;Value;Error
+10234;City;Łódź;Charset
+10871;Street;Rue de Genève 4;Charset
+11002;Name;Müller-Lüdenscheidt;Length > 20
+11523;City;São Paulo;Charset

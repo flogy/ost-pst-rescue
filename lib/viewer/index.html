@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mailbox viewer</title>
+<link rel="stylesheet" href="assets/viewer.css">
+</head>
+<body>
+<header>
+  <h1 id="title" data-i18n="app.loading">Loading mailbox …</h1>
+  <div class="meta" id="meta"></div>
+  <label class="lang" hidden><span data-i18n="app.language">Language</span> <select id="lang"></select></label>
+</header>
+<nav class="tabs" id="tabs" hidden>
+  <button data-view="mail" class="on"><span data-i18n="tabs.mail">Mail</span></button>
+  <button data-view="calendar" hidden><span data-i18n="tabs.calendar">Calendar</span><span class="n"></span></button>
+  <button data-view="contacts" hidden><span data-i18n="tabs.contacts">Contacts</span><span class="n"></span></button>
+  <button data-view="tasks" hidden><span data-i18n="tabs.tasks">Tasks</span><span class="n"></span></button>
+  <span class="ro" data-i18n="tabs.readOnly">Read-only preview</span>
+</nav>
+<section class="view" id="calendarView" hidden>
+  <div class="pane">
+    <div class="bar">
+      <button id="calPrev" data-i18n-title="cal.previous">‹</button><button id="calToday" data-i18n="cal.today">Today</button><button id="calNext" data-i18n-title="cal.next">›</button>
+      <h2 id="calTitle"></h2><span class="spacer"></span>
+      <div class="seg"><button data-mode="month" data-i18n="cal.month">Month</button><button data-mode="list" data-i18n="cal.list">List</button></div>
+    </div>
+    <div class="dows" id="calDows"></div>
+    <div class="scroll" id="calBody"></div>
+  </div>
+  <div class="split" data-var="--w-detail" data-default="360" data-side="right" role="separator" aria-orientation="vertical" data-i18n-aria-label="split.detail" data-i18n-title="split.title" tabindex="0"></div>
+  <aside class="detail" id="calDetail"><div class="placeholder" data-i18n="cal.none">No event selected</div></aside>
+</section>
+<section class="view" id="contactsView" hidden>
+  <div class="pane">
+    <div class="listHead"><input type="search" id="cFilter" data-i18n-placeholder="contacts.search"></div>
+    <div class="scroll" id="cItems"></div>
+  </div>
+  <div class="split" data-var="--w-detail" data-default="360" data-side="right" role="separator" aria-orientation="vertical" data-i18n-aria-label="split.detail" data-i18n-title="split.title" tabindex="0"></div>
+  <aside class="detail" id="cDetail"><div class="placeholder" data-i18n="contacts.none">No contact selected</div></aside>
+</section>
+<section class="view" id="tasksView" hidden>
+  <div class="pane"><div class="scroll" id="tItems"></div></div>
+  <div class="split" data-var="--w-detail" data-default="360" data-side="right" role="separator" aria-orientation="vertical" data-i18n-aria-label="split.detail" data-i18n-title="split.title" tabindex="0"></div>
+  <aside class="detail" id="tDetail"><div class="placeholder" data-i18n="tasks.none">No task selected</div></aside>
+</section>
+<main id="mailView">
+  <section id="tree" data-i18n-aria-label="tree.label" aria-label="Folders"></section>
+  <div class="split" data-var="--w-tree" data-default="260" role="separator" aria-orientation="vertical" data-i18n-aria-label="split.tree" data-i18n-title="split.title" tabindex="0"></div>
+  <section id="listPane" data-i18n-aria-label="list.label" aria-label="Items">
+    <div class="listHead">
+      <div class="title"><div id="folderName" data-i18n="list.chooseFolder">Choose a folder</div><span id="folderCount"></span></div>
+      <div class="search">
+        <input type="search" id="filter" data-i18n-placeholder="search.placeholderFolder">
+        <select id="scope" data-i18n-title="search.scopeTitle"><option value="folder" data-i18n="search.scopeFolder">This folder</option><option value="all" data-i18n="search.scopeAll">All folders</option></select>
+      </div>
+    </div>
+    <div id="list"></div>
+  </section>
+  <div class="split" data-var="--w-list" data-default="380" role="separator" aria-orientation="vertical" data-i18n-aria-label="split.list" data-i18n-title="split.title" tabindex="0"></div>
+  <section id="reader" data-i18n-aria-label="reader.label" aria-label="Reading pane"><div class="placeholder" data-i18n="reader.none">No item selected</div></section>
+</main>
+<dialog id="errDlg"><h3 data-i18n="errors.title">Errors while reading</h3><pre id="errList"></pre><form method="dialog"><button data-i18n="errors.close">Close</button></form></dialog>
+<noscript>This viewer requires JavaScript. / Dieser Viewer benötigt JavaScript.</noscript>
+<script src="assets/viewer.js"></script>
+</body>
+</html>

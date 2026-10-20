@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+PRODID:-//Contoso AG//Beispiel//DE
+VERSION:2.0
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:ws1-webshop@fabrikam.com
+DTSTAMP:20260824T074500Z
+DTSTART:20260903T080000Z
+DTEND:20260903T110000Z
+SUMMARY:Webshop workshop: design
+LOCATION:Fabrikam Inc., Manchester
+ORGANIZER;CN=Lucas Miller:mailto:lucas.miller@fabrikam.com
+END:VEVENT
+END:VCALENDAR

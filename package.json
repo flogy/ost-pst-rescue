@@ -1,0 +1,40 @@
+{
+  "name": "ost-pst-rescue",
+  "version": "0.1.0",
+  "description": "Look inside Outlook OST/PST files and export them to open formats: an offline HTML viewer, mbox with folder labels, iCalendar and vCard.",
+  "keywords": [
+    "ost",
+    "pst",
+    "outlook",
+    "mbox",
+    "ics",
+    "icalendar",
+    "vcard",
+    "email",
+    "export",
+    "migration",
+    "backup"
+  ],
+  "author": "Florian Gyger",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "ost-pst-rescue": "rescue.js"
+  },
+  "files": [
+    "rescue.js",
+    "lib/",
+    "locales/"
+  ],
+  "scripts": {
+    "test": "node test/run.js",
+    "sample": "node sample/generate.js",
+    "demo": "node sample/generate.js && node rescue.js view sample-mailbox.pst docs/demo --force"
+  },
+  "dependencies": {
+    "pst-extractor": "^1.12.0"
+  }
+}
